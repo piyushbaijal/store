@@ -1,0 +1,26 @@
+<h6>Shopping Cart</h6>
+<div class="container">
+    <table class="table table-borderless">
+        <tr *ngFor="let product of cart">
+            <td><strong>{{ product.name }}</strong></td>
+            <td class="quantity">
+                <button (click)=" decreaseQuantity(product) ">-</button> {{ product.quantity}}
+                <button (click)="increaseQuantity(product) ">+</button>
+            </td>
+            <td><strong>${{ product.price * product.quantity }}</strong></td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div class="d-grid gap-4 d-md-flex justify-content-md-end">
+
+    <strong>Sub Total
+    <p>{{totalQuantity}} Items</p>
+</strong>
+    <h4><strong>${{total}}</strong></h4>
+
+</div>
+<div class="d-grid d-md-flex justify-content-md-end">
+    <button class="btn me-md-2 " (click)="back() ">Add Products</button>&nbsp;
+    <button class="btn me-md-2 " (click)="checkout() ">Checkout</button>
+</div>

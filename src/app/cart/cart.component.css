@@ -1,0 +1,25 @@
+.quantity button {
+    border-radius: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: rgb(159, 181, 181);
+    align-items: center;
+    justify-content: center;
+}
+
+td {
+    width: 10rem;
+    /* background-color: aqua; */
+}
+
+.btn-primary {
+    width: 12rem;
+    border-radius: 2rem;
+}
+
+button {
+    background-color: rgb(164, 199, 251);
+    border-radius: 2rem;
+    width: fit-content;
+}
